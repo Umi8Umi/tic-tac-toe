@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var turn = 1;
     var M = 3;
     var N = 3;
-    btnID = 0;
+    var btnID = 0;
     var gridContainer = document.getElementById("grid-container");
     for (var i = 0; i < M; i++) { 
       for (var j = 0; j < N; j++) {
@@ -50,11 +50,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         player2_div.style.display="flex"
         player1_div.style.display="none"
-        console.log("before: " + index + " " + document.getElementsByName('player2_icon')[index].checked);
         if(index == 1)
             document.getElementsByName('player2_icon')[2].checked = true;
         document.getElementsByName('player2_icon')[index].disabled = true;
-        console.log("after: " + index + " " + document.getElementsByName('player2_icon')[index].checked);
     }, false);
     player2.addEventListener("click", function(){
         board.style.display="inline-grid"
