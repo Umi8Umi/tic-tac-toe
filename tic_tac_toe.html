@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>t!c-t@c-to3</title>
+	<link rel="icon" href="tic_tac_toe_logo.PNG">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="page-container">
+		<div>
+			<img src="title.PNG" id="title">
+			<div id="title_under">
+				<img src="heart.PNG" class="title_marking">
+				<img src="sun.PNG" class="title_marking">
+				<img src="fish.PNG" class="title_marking">
+				<img src="flower.PNG" class="title_marking">
+				<img src="at.PNG" class="title_marking">
+			</div>
+		</div>
+		<div id="grid-centered">
+			<div id="player1_div" class="centered">
+				<h1>Player 1 choose your icon:</h1>
+				<div class="break"></div>
+				<form>
+					<label>
+						<input type="radio" name="player1_icon" value="heart.PNG" checked="true">
+						<img src="heart.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player1_icon" value="sun.PNG">
+						<img src="sun.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player1_icon" value="fish.PNG">
+						<img src="fish.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player1_icon" value="flower.PNG">
+						<img src="flower.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player1_icon" value="at.PNG">
+						<img src="at.PNG" width="150px">
+					</label>
+				</form>
+				<div class="break"></div>
+				<button id="player1" class="next_btn">next</button>
+			</div>
+			<div id="player2_div" class="centered">
+				<h1>Now Player 2 can choose:</h1>
+				<div class="break"></div>
+				<form>
+					<label>
+						<input type="radio" name="player2_icon" value="heart.PNG">
+						<img src="heart.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player2_icon" value="sun.PNG" checked="true">
+						<img src="sun.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player2_icon" value="fish.PNG">
+						<img src="fish.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player2_icon" value="flower.PNG">
+						<img src="flower.PNG" width="150px">
+					</label>
+					<label>
+						<input type="radio" name="player2_icon" value="at.PNG">
+						<img src="at.PNG" width="150px">
+					</label>
+				</form>
+				<div class="break"></div>
+				<button id="player2" class="next_btn">next</button>	
+			</div>
+			<div>
+				<div id="grid-container">
+				</div>
+				<img src="" id="currentTurn" width="50px">
+			</div>
+		</div>
+		<div class="centered">
+			<h1 id="results"></h1>
+			<div class="break"></div>
+			<button class="next_btn" name="newGame">new game</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
